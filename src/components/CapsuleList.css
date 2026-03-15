@@ -1,0 +1,139 @@
+.capsule-list-card {
+  background: rgba(18, 18, 22, 0.85);
+  border: 1px solid #2b2f3a;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.capsule-list-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.capsule-section {
+  margin-bottom: 1.2rem;
+}
+
+.capsule-section h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.capsule-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.capsule-section-header h3 {
+  margin: 0;
+}
+
+.refresh-btn {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.note-sender {
+  display: block;
+  font-size: 0.78rem;
+  color: #7a829a;
+  margin-top: 0.2rem;
+}
+
+.capsule-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.capsule-items li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #323747;
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+}
+
+.capsule-items code {
+  overflow-wrap: anywhere;
+  font-size: 0.82rem;
+}
+
+.capsule-data-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #3a3f4b;
+  border-radius: 8px;
+  background: #141720;
+  color: #f1f3fa;
+  padding: 0.65rem;
+  font: 0.8rem/1.4 monospace;
+  resize: vertical;
+  margin-bottom: 0.55rem;
+}
+
+.capsule-list-muted {
+  color: #9ea5b5;
+}
+
+.capsule-list-error {
+  color: #ff7171;
+  word-break: break-word;
+}
+
+.capsule-message-reveal {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #27413d;
+  border-radius: 10px;
+  background: #0f1b19;
+}
+
+.capsule-message-reveal h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #82e7a8;
+}
+
+.capsule-message-reveal p {
+  margin: 0;
+  white-space: pre-wrap;
+  color: #d4e0f0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.capsule-list-success {
+  color: #82e7a8;
+}
+
+@media (max-width: 700px) {
+  .capsule-items li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manual-open-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Hint text --- */
+
+.capsule-list-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted, #888);
+  margin: 0.25rem 0 0.75rem;
+  line-height: 1.4;
+}
+
+.capsule-list-hint strong {
+  color: var(--text, #eee);
+}

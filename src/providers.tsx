@@ -6,7 +6,7 @@ import { APP_NAME, MIDEN_RPC_URL, MIDEN_PROVER } from "@/config";
 
 export function AppProviders({ children }: { children: ReactNode }) {
   return (
-    <MidenFiSignerProvider appName={APP_NAME} autoConnect>
+    <MidenFiSignerProvider appName={APP_NAME}>
       <MidenProvider
         config={{ rpcUrl: MIDEN_RPC_URL, prover: MIDEN_PROVER }}
         loadingComponent={
